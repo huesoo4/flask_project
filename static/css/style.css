@@ -390,15 +390,20 @@ p {
         transform: translate(-50%, -50%);
     }
 
-    .orbit-1 .orbit-planet { transform: rotate(-20deg) translateX(58px) rotate(20deg); }
-    .orbit-2 .orbit-planet { transform: rotate(35deg) translateX(74px) rotate(-35deg); }
-    .orbit-3 .orbit-planet { transform: rotate(-55deg) translateX(92px) rotate(55deg); }
-    .orbit-4 .orbit-planet { transform: rotate(80deg) translateX(110px) rotate(-80deg); }
-    .orbit-5 .orbit-planet { transform: rotate(150deg) translateX(129px) rotate(-150deg); }
-    .orbit-6 .orbit-planet { transform: rotate(215deg) translateX(148px) rotate(-215deg); }
-    .orbit-7 .orbit-planet { transform: rotate(250deg) translateX(166px) rotate(-250deg); }
-    .orbit-8 .orbit-planet { transform: rotate(290deg) translateX(182px) rotate(-290deg); }
-    .orbit-9 .orbit-planet { transform: rotate(320deg) translateX(195px) rotate(-320deg); }
+    .orbit-1 .orbit-planet { --orbit-angle: -20deg; --orbit-distance: 0.15; }
+    .orbit-2 .orbit-planet { --orbit-angle: 35deg; --orbit-distance: 0.19; }
+    .orbit-3 .orbit-planet { --orbit-angle: -55deg; --orbit-distance: 0.235; }
+    .orbit-4 .orbit-planet { --orbit-angle: 80deg; --orbit-distance: 0.28; }
+    .orbit-5 .orbit-planet { --orbit-angle: 150deg; --orbit-distance: 0.33; }
+    .orbit-6 .orbit-planet { --orbit-angle: 215deg; --orbit-distance: 0.38; }
+    .orbit-7 .orbit-planet { --orbit-angle: 250deg; --orbit-distance: 0.425; }
+    .orbit-8 .orbit-planet { --orbit-angle: 290deg; --orbit-distance: 0.465; }
+    .orbit-9 .orbit-planet { --orbit-angle: 320deg; --orbit-distance: 0.5; }
+
+    .orbit .orbit-planet {
+        transform: translate(-50%, -50%) rotate(var(--orbit-angle)) translateX(calc(var(--orbit-distance) * min(88vw, 390px))) rotate(calc(var(--orbit-angle) * -1));
+        transform-origin: center;
+    }
 
     .orbit-planet img {
         width: 20px;
