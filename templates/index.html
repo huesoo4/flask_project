@@ -17,6 +17,11 @@
 
         {% for planet in planets %}
             <div class="orbit orbit-{{ planet.position }}">
+                <a href="{{ url_for('planets', position=planet.position) }}"
+                   class="orbit-planet planet-{{ planet.position }}"
+                   title="{{ planet.name }}">
+                    <img src="{{ planet.image }}" alt="{{ planet.name }}">
+                </a>
             </div>
         {% endfor %}
 
