@@ -3,3 +3,59 @@
 {% block title %}Planets{% endblock %}
 
 {% block content %}
+
+<h1>Planets</h1>
+
+<form method="GET" class="search-form">
+
+    <input type="text"
+           name="search"
+           placeholder="Search planet"
+           value="{{ search }}">
+
+    <select name="type">
+        <option value="">All types</option>
+
+        {% for type in planet_types %}
+            <option value="{{ type }}" {% if selected_type == type %}selected{% endif %}>
+                {{ type }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <select name="order">
+        <option value="asc" {% if order == "asc" %}selected{% endif %}>
+            A-Z
+        </option>
+
+        <option value="desc" {% if order == "desc" %}selected{% endif %}>
+            Z-A
+        </option>
+    </select>
+
+    <button type="submit">Search</button>
+
+</form>
+
+<table class="planets-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Distance from Sun</th>
+            <th>Velocity</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+    </tbody>
+</table>
+
+<a class="back-link"
+       href="{{ url_for('index') }}">
+        ← Back to home
+</a>
+
+{% endblock %}

@@ -17,6 +17,38 @@ def planets():
     all_planets = load_planets()
     planets = all_planets.copy()
 
+    search = request.args.get("search", "").lower()
+    planet_type = request.args.get("type", "")
+    order = request.args.get("order", "asc")
+
+    planet_types = sorted(set(planet["type"] for planet in all_planets))
+
+    if search:
+        planets = [
+            planet for planet in planets
+            if search in planet["name"].lower()
+        ]
+
+    if planet_type:
+        planets = [
+            planet for planet in planets
+            if planet["type"] == planet_type
+        ]
+
+    if order == "desc":
+        planets = sorted(planets, key=lambda planet: planet["name"], reverse=True)
+    else:
+        planets = sorted(planets, key=lambda planet: planet["name"])
+
+    return render_template(
+        "planets.html",
+        planets=planets,
+        search=search,
+        selected_type=planet_type,
+        planet_types=planet_types,
+        order=order
+    )
+
 
 if __name__ == "__main__":
     app.run(debug=True)

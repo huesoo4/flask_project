@@ -151,3 +151,58 @@ p {
 .planet-7 img,
 .planet-8 img { width: 50px; height: 50px; }
 .planet-9 img { width: 36px; height: 36px; }
+
+/* buscador */
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    padding: 12px;
+}
+
+.search-form input,
+.search-form select {
+    background: var(--card-bg);
+    color: var(--text-main);
+}
+
+.search-form button {
+    background: var(--primary-dark);
+    color: var(--text-main);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-form button:hover,
+.detail-button:hover {
+    background: var(--primary-light);
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* tabla */
+
+.planets-table {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
