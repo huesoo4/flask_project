@@ -252,8 +252,44 @@ p {
 
 /* retroceso */
 
+.moons,
 .back-link {
     margin-top: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary);
+}
+
+/* detalles */
+
+.detail-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.detail-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.detail-top img {
+    width: 350px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-info ul {
+    margin-top: 20px;
+    line-height: 2;
 }
 
 .back-link {

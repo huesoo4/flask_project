@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}{{ planet.name }}{% endblock %}
+
+{% block content %}
+
+<div class="detail-container">
+
+    <h1>{{ planet.name }}</h1>
+
+    <div class="detail-top">
+
+        <img src="{{ planet.image }}"
+             alt="{{ planet.name }}">
+
+        <div class="detail-info">
+
+            <p>{{ planet.description }}</p>
+
+            <ul>
+                <li><strong>Distance from sun:</strong> {{ planet.orbital_data.distance }}</li>
+                <li><strong>Velocity:</strong> {{ planet.orbital_data.velocity }}</li>
+                <li><strong>Mass:</strong> {{ planet.physical_data.mass }}</li>
+                <li><strong>Diameter:</strong> {{ planet.physical_data.diameter }}</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    {% if planet.moons %}
+
+    <div class="moons">
+
+        <h2>Moons</h2>
+        <p>Total: {{ planet.moons.total }}</p>
+
+        <ul>
+            {% for moon in planet.moons.names %}
+                <li>{{ moon }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    {% endif %}
+
+    <a class="back-link"
+       href="{{ url_for('planets') }}">
+        ← Back to planets
+    </a>
+
+</div>
+
+{% endblock %}

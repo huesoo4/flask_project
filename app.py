@@ -53,5 +53,12 @@ def planets():
 def planet_detail(position):
     planets = load_planets()
 
+    planet = next(
+        (planet for planet in planets if planet["position"] == position),
+        None
+    )
+
+    return render_template("detail.html", planet=planet)
+
 if __name__ == "__main__":
     app.run(debug=True)
