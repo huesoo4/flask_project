@@ -292,3 +292,67 @@ p {
     margin-top: 20px;
     line-height: 2;
 }
+
+@media (max-width: 900px) {
+    .solar-system {
+        width: 600px;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .planets-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .planets-table thead {
+        display: none;
+    }
+
+    .planets-table,
+    .planets-table tbody,
+    .planets-table tr,
+    .planets-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .planets-table tbody tr {
+        margin-bottom: 20px;
+        padding: 18px;
+    }
+
+    .planets-table tbody td {
+        padding: 10px;
+    }
+
+    .planets-table tbody td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 5px;
+        color: var(--primary-light);
+        font-weight: 700;
+    }
+
+    .planets-table tbody td:first-child,
+    .planets-table tbody td:last-child {
+        border-radius: 0;
+    }
+
+    .planets-table .detail-button {
+        margin-top: 10px;
+    }
+}
