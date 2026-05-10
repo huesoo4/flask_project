@@ -116,6 +116,7 @@ p {
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
+    padding: 10px 18px;
 }
 
 .explore-button {
@@ -290,9 +291,4 @@ p {
 .detail-info ul {
     margin-top: 20px;
     line-height: 2;
-}
-
-.back-link {
-    display: inline-block;
-    color: var(--primary);
 }
