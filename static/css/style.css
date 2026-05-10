@@ -363,10 +363,34 @@ p {
     }
 
     .solar-system {
-        width: 90vw;
-        height: 90vw;
-        max-width: 600px;
-        max-height: 600px;
+        width: 600px;
+        height: 600px;
+    }
+
+    .planets-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-text p {
+        font-size: 0.75rem;
+    }
+
+    .solar-system {
+        width: 92vw;
+        height: 92vw;
+        max-width: 430px;
+        max-height: 430px;
+        margin: 30px auto;
     }
 
     .orbit-1 { width: 18%; height: 18%; }
@@ -380,48 +404,24 @@ p {
     .orbit-9 { width: 100%; height: 100%; }
 
     .sun {
-        width: 14%;
-        height: 14%;
-    }
-
-    .orbit-planet img {
-        width: 28px;
-        height: 28px;
-    }
-
-    .planet-5 img { width: 36px; height: 36px; }
-    .planet-6 img { width: 40px; height: 40px; }
-    .planet-7 img,
-    .planet-8 img { width: 32px; height: 32px; }
-    .planet-9 img { width: 24px; height: 24px; }
-
-    .planets-table {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-text p {
-        font-size: 0.8rem;
-    }
-
-    .solar-system {
-        width: 92vw;
-        height: 92vw;
-        margin-top: 20px;
+        width: 16%;
+        height: 16%;
     }
 
     .orbit-planet {
-        right: -12px;
+        right: -10px;
     }
+
+    .orbit-planet img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .planet-5 img { width: 30px; height: 30px; }
+    .planet-6 img { width: 34px; height: 34px; }
+    .planet-7 img,
+    .planet-8 img { width: 28px; height: 28px; }
+    .planet-9 img { width: 22px; height: 22px; }
 
     .search-form {
         flex-direction: column;
