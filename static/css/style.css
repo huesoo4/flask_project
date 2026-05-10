@@ -249,3 +249,14 @@ p {
     padding: 10px 18px;
     white-space: nowrap;
 }
+
+/* retroceso */
+
+.back-link {
+    margin-top: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary);
+}
