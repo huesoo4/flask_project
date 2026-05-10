@@ -379,10 +379,26 @@ p {
     .orbit-8 { width: 93%; height: 93%; }
     .orbit-9 { width: 100%; height: 100%; }
 
-    .orbit-planet {
-        right: 0;
-        transform: translate(30%, -50%);
+    .orbit {
+    animation: none;
     }
+
+    .orbit-planet {
+        right: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .orbit-1 .orbit-planet { transform: rotate(-20deg) translateX(58px) rotate(20deg); }
+    .orbit-2 .orbit-planet { transform: rotate(35deg) translateX(74px) rotate(-35deg); }
+    .orbit-3 .orbit-planet { transform: rotate(-55deg) translateX(92px) rotate(55deg); }
+    .orbit-4 .orbit-planet { transform: rotate(80deg) translateX(110px) rotate(-80deg); }
+    .orbit-5 .orbit-planet { transform: rotate(150deg) translateX(129px) rotate(-150deg); }
+    .orbit-6 .orbit-planet { transform: rotate(215deg) translateX(148px) rotate(-215deg); }
+    .orbit-7 .orbit-planet { transform: rotate(250deg) translateX(166px) rotate(-250deg); }
+    .orbit-8 .orbit-planet { transform: rotate(290deg) translateX(182px) rotate(-290deg); }
+    .orbit-9 .orbit-planet { transform: rotate(320deg) translateX(195px) rotate(-320deg); }
 
     .orbit-planet img {
         width: 20px;
