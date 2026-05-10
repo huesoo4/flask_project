@@ -206,3 +206,46 @@ p {
     border-collapse: separate;
     border-spacing: 0 16px;
 }
+
+.planets-table thead th {
+    padding: 14px 20px;
+    text-align: left;
+    color: var(--primary-light);
+    font-size: 1rem;
+    text-shadow: 0 0 10px var(--primary-dark);
+}
+
+.planets-table tbody tr {
+    background: var(--card-bg);
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(147, 51, 234, .20);
+    transition: .3s;
+}
+
+.planets-table tbody tr:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 25px var(--card-border);
+}
+
+.planets-table tbody td {
+    padding: 18px 20px;
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.planets-table tbody td:first-child {
+    border-radius: 18px 0 0 18px;
+    color: var(--primary-light);
+    font-weight: 700;
+}
+
+.planets-table tbody td:last-child {
+    border-radius: 0 18px 18px 0;
+}
+
+.planets-table .detail-button {
+    display: inline-block;
+    margin-top: 0;
+    padding: 10px 18px;
+    white-space: nowrap;
+}

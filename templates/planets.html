@@ -49,7 +49,20 @@
     </thead>
 
     <tbody>
-        
+        {% for planet in planets %}
+            <tr>
+                <td>{{ planet.name }}</td>
+                <td>{{ planet.type }}</td>
+                <td>{{ planet.orbital_data.distance }} AU</td>
+                <td>{{ planet.orbital_data.velocity }} km/s</td>
+                <td>
+                    <a class="detail-button"
+                       href="{{ url_for('planet_detail', position=planet.position) }}">
+                        View details
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}        
     </tbody>
 </table>
 

@@ -49,6 +49,9 @@ def planets():
         order=order
     )
 
+@app.route("/planet/<position>")
+def planet_detail(position):
+    planets = load_planets()
 
 if __name__ == "__main__":
     app.run(debug=True)
