@@ -58,7 +58,10 @@ def planet_detail(position):
         None
     )
 
+    if planet is None:
+        abort(404)
+
     return render_template("detail.html", planet=planet)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
