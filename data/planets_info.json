@@ -1,0 +1,340 @@
+[
+	{"position": "1",
+	 "name": "Mercury",
+	 "type": "Rocky",
+	 "image": "/static/images/mercury.png",
+        "orbital_data": {
+                "velocity": "47,87",
+	        "distance": "0.38"
+         },
+        "physical_data": {
+                "mass": "3,302x10²³",
+                "diameter":"4879,4"
+         },
+	 "description": "Mercury is the closest planet to the Sun and due to its proximity it is not easily seen except during twilight. For every two orbits of the Sun, Mercury completes three rotations about its axis and up until 1965 it was thought that the same side of Mercury constantly faced the Sun. Thirteen times a century Mercury can be observed from the Earth passing across the face of the Sun in an event called a transit, the next will occur on the 9th May 2016.",
+        "moons": {
+                "total": 0,
+                "names": []
+         }
+       },
+	{"position": "2",
+	 "name": "Venus",
+	 "type": "Rocky",
+	 "image": "/static/images/venus.png",
+        "orbital_data": {
+                "velocity": "35,02",
+                "distance": "0.72"
+         },
+        "physical_data": {
+                "mass": "4,869x10²⁴",
+                "diameter": "12103,6"
+         },
+	 "description": "Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon. Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth’s sister planet due the their similar size and mass. The surface of the planet is obscured by an opaque layer of clouds made up of sulphuric acid.",
+        "moons": {
+                 "total": 0,
+                 "names": []
+            }
+	},
+	{"position": "3",
+	 "name": "Earth",
+	 "type": "Rocky",
+	 "image": "/static/images/earth.png",
+        "orbital_data": {
+                "velocity": "29,78",
+                "distance": "1"
+         },
+        "physical_data": {
+                "mass": "5,973x10²⁴",
+                "diameter": "12742"
+         },
+	 "description": "Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.",
+        "moons": {
+                "total": 1,
+                "names": ["Moon"]
+            }
+	},
+	{"position": "4",
+	 "name": "Mars",
+	 "type": "Rocky",
+	 "image": "/static/images/mars.png",
+        "orbital_data": {
+                "velocity": "24,07",
+                "distance": "1.52"
+         },
+        "physical_data": {
+                "mass": "6,418x10²³",
+                "diameter": "6794,4"
+         },
+	 "description": "Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.",
+        "moons": {
+                "total": 2,
+                "names": ["Deimos", "Phobos"]
+            }
+	},
+	{"position": "5",
+     	 "name": "Jupiter",
+     	 "type": "Gas Giant",
+	 "image": "/static/images/jupiter.png",
+        "orbital_data": {
+                "velocity": "13,069",
+                "distance": "5.20"
+         },
+        "physical_data": {
+                "mass": "1,899x10²⁷",
+                "diameter": "142984"
+         },
+	 "description": "The planet Jupiter is the fifth planet out from the Sun, and is two and a half times more massive than all the other planets in the solar system combined. It is made primarily of gases and is therefore known as a “gas giant”.",
+        "moons": {
+                "total": 79,
+                "names": [
+                        "Metis",
+                        "Adrastea",
+                        "Amalthea",
+                        "Thebe",
+                        "Io",
+                        "Europa",
+                        "Ganymede",
+                        "Callisto",
+                        "Themisto",
+                        "Leda",
+                        "Himalia",
+                        "Lysithea",
+                        "Elara",
+                        "S/2000 J11",
+                        "S/2003 J12",
+                        "Carpo",
+                        "Euporie",
+                        "S/2003 J3",
+                        "S/2003 J18",
+                        "Orthosie",
+                        "Euanthe",
+                        "Harpalyke",
+                        "Praxidike",
+                        "Thyone",
+                        "S/2003 J16",
+                        "Iocaste",
+                        "Mneme",
+                        "Hermippe",
+                        "Thelxinoe",
+                        "Helike",
+                        "Ananke",
+                        "S/2003 J15",
+                        "Eurydome",
+                        "Arche",
+                        "Herse",
+                        "Pasithee",
+                        "S/2003 J10",
+                        "Chaldene",
+                        "Isonoe",
+                        "Erinome",
+                        "Kale",
+                        "Aitne",
+                        "Taygete",
+                        "S/2003 J9",
+                        "Carme",
+                        "Sponde",
+                        "Megaclite",
+                        "S/2003 J5",
+                        "S/2003 J19",
+                        "S/2003 J23",
+                        "Kalyke",
+                        "Kore",
+                        "Pasiphae",
+                        "Eukelade",
+                        "S/2003 J4",
+                        "Sinope",
+                        "Hegemone",
+                        "Aoede",
+                        "Kallichore",
+                        "Autonoe",
+                        "Callirrhoe",
+                        "Cyllene",
+                        "S/2003 J2"
+                ]
+            }
+
+	},
+	{"position": "6",
+	 "name": "Saturn",
+	 "type": "Gas Giant",
+	 "image": "/static/images/saturn.png",
+        "orbital_data": {
+                "velocity": "9,67",
+                "distance": "9.58"
+         },
+        "physical_data": {
+                "mass": "5,688x10²⁶",
+                "diameter": "120536"
+         },
+	 "description": "Saturn is the sixth planet from the Sun and the most distant that can be seen with the naked eye. Saturn is the second largest planet and is best known for its fabulous ring system that was first observed in 1610 by the astronomer Galileo Galilei. Like Jupiter, Saturn is a gas giant and is composed of similar gasses including hydrogen, helium and methane.",
+        "moons": {
+                "total": 82,
+                "names": [
+                        "Tarqeq",
+                        "Pan",
+                        "Daphnis",
+                        "Atlas",
+                        "Prometheus",
+                        "Pandora",
+                        "Epimetheus",
+                        "Janus",
+                        "Aegaeon",
+                        "Mimas",
+                        "Methone",
+                        "Anthe",
+                        "Pallene",
+                        "Enceladus",
+                        "Tethys",
+                        "Calypso",
+                        "Telesto",
+                        "Polydeuces",
+                        "Dione",
+                        "Helene",
+                        "Rhea",
+                        "Titan",
+                        "Hyperion",
+                        "Iapetus",
+                        "Kiviuq",
+                        "Ijiraq",
+                        "Phoebe",
+                        "Paaliaq",
+                        "Skathi",
+                        "Albiorix",
+                        "S/2007 S2",
+                        "Bebhionn",
+                        "Erriapo",
+                        "Siarnaq",
+                        "Skoll",
+                        "Tarvos",
+                        "Greip",
+                        "S/2004 S13",
+                        "Hyrrokkin",
+                        "Mundilfari",
+                        "S/2006 S1",
+                        "Jarnsaxa",
+                        "Narvi",
+                        "Bergelmir",
+                        "S/2004 S17",
+                        "Suttungr",
+                        "Hati",
+                        "S/2004 S12",
+                        "Bestla",
+                        "Farbauti",
+                        "Thrymr",
+                        "S/2007 S3",
+                        "Aegir",
+                        "S/2004 S7",
+                        "S/2006 S3",
+                        "Kari",
+                        "Fenrir",
+                        "Surtur",
+                        "Ymir",
+                        "Loge",
+                        "Fornjot"
+                ]
+                   
+             }
+	},
+	{"position": "7",
+	 "name": "Uranus",
+	 "type": "Ice Giant",
+	 "image": "/static/images/uranus.png",
+        "orbital_data": {
+                "velocity": "6,81",
+                "distance": "19.19"
+         },
+        "physical_data": {
+                "mass": "8,686x10²⁵",
+                "diameter": "51118"
+         },
+	 "description": "Uranus is the seventh planet from the Sun. While being visible to the naked eye, it was not recognised as a planet due to its dimness and slow orbit. Uranus became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”",
+        "moons": { 
+                "total": 27,
+                "names": [
+                        "Cordelia",
+                        "Ophelia",
+                        "Bianca",
+                        "Cressida",
+                        "Desdemona",
+                        "Juliet",
+                        "Portia",
+                        "Rosalind",
+                        "Cupid",
+                        "Belinda",
+                        "Perdita",
+                        "Puck",
+                        "Mab",
+                        "Miranda",
+                        "Ariel",
+                        "Umbriel",
+                        "Titania",
+                        "Oberon",
+                        "Francisco",
+                        "Caliban",
+                        "Stephano",
+                        "Trinculo",
+                        "Sycorax",
+                        "Margaret",
+                        "Prospero",
+                        "Setebos",
+                        "Ferdinand"
+                ]
+             }
+	},
+	{"position": "8",
+	 "name": "Neptune",
+	 "type": "Ice Giant",
+	 "image": "/static/images/neptune.png",
+        "orbital_data": {
+                "velocity": "5,47",
+                "distance": "29.8"
+         },
+        "physical_data": {
+                "mass": "1,024x10²⁶",
+                "diameter": "49572"
+         },
+	 "description": "Neptune is the eighth planet from the Sun",
+        "moons": { 
+                "total": 14,
+                "names": [
+                        "Naiad",
+                        "Thalassa",
+                        "Despina",
+                        "Galatea",
+                        "Larissa",
+                        "Proteus",
+                        "Triton",
+                        "Nereid",
+                        "Halimede",
+                        "Sao",
+                        "Laomedeia",
+                        "Psamathe",
+                        "Neso"
+                ]
+             }
+	},
+	{"position": "9",
+	 "name": "Pluto",
+	 "type": "Dwarf Planet",
+	 "image": "/static/images/Pluto.png",
+        "orbital_data": {
+                "velocity": "4,7",
+                "distance": "39.48"
+         },
+        "physical_data": {
+                "mass": "1,25x10²²",
+                "diameter": "2376,6"
+         },
+	 "description": "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first and the largest Kuiper belt object to be discovered.",
+        "moons": { 
+                "total": 5,
+                "names": [
+                        "Charon",
+                        "Styx",
+                        "Nix",
+                        "Kerberos",
+                        "Hydra"
+                ]
+             }
+	}
+]
