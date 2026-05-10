@@ -44,3 +44,82 @@ p {
     color: var(--text-soft);
     line-height: 1.6;
 }
+
+/* index.html */
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--card-border);
+    animation: orbit-rotation linear infinite;
+    pointer-events: none;
+}
+
+@keyframes orbit-rotation {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.solar-system {
+    position: relative;
+    width: 850px;
+    height: 850px;
+    margin: auto;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(147, 51, 234, .10), transparent 45%);
+}
+
+.sun {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    filter:
+        drop-shadow(0 0 35px var(--sun-color))
+        drop-shadow(0 0 80px var(--sun-color));
+    z-index: 10;
+}
+
+
+/* orbitas */
+
+.orbit-1 { width: 150px; height: 150px; animation-duration: 7s; }
+.orbit-2 { width: 220px; height: 220px; animation-duration: 11s; }
+.orbit-3 { width: 300px; height: 300px; animation-duration: 15s; }
+.orbit-4 { width: 380px; height: 380px; animation-duration: 20s; }
+.orbit-5 { width: 490px; height: 490px; animation-duration: 32s; }
+.orbit-6 { width: 600px; height: 600px; animation-duration: 42s; }
+.orbit-7 { width: 700px; height: 700px; animation-duration: 55s; }
+.orbit-8 { width: 790px; height: 790px; animation-duration: 70s; }
+.orbit-9 { width: 850px; height: 850px; animation-duration: 85s; }
+
+/* boton */
+
+.detail-button {
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    background: var(--primary-dark);
+    color: var(--text-main);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.explore-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}

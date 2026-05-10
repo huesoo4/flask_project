@@ -10,17 +10,12 @@ def load_planets():
 @app.route("/")
 def index():
     planets = load_planets()
-
+    return render_template("index.html", planets=planets)
 
 @app.route("/planets")
 def planets():
     all_planets = load_planets()
-
-
-@app.route("/planet/<position>")
-def planet_detail(position):
-    planets = load_planets()
-
+    planets = all_planets.copy()
 
 
 if __name__ == "__main__":

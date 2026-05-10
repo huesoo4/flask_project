@@ -4,12 +4,28 @@
 
 {% block content %}
 
-<section>
+<section class="orbit-page">
 
-    <div>
+    <div class="hero-text">
         <h1>Solar System Explorer</h1>
         <p>Click on any planet to explore its information</p>
     </div>
+
+    <div class="solar-system">
+
+        <img class="sun" src="{{ url_for('static', filename='images/sun.png') }}" alt="Sun">
+
+        {% for planet in planets %}
+            <div class="orbit orbit-{{ planet.position }}">
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <a class="detail-button explore-button" href="{{ url_for('planets') }}">
+        View planet list
+    </a>
+
 
 </section>
 
